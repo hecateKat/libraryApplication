@@ -15,10 +15,10 @@ public class Rent {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @OneToOne
+    @ManyToOne
     private Book book;
 
-    @OneToOne
+    @ManyToOne
     private User user;
     private LocalDate rentTime;
     private LocalDate returnTime;

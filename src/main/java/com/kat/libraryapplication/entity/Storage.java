@@ -16,6 +16,7 @@ public class Storage {
 
     @OneToOne
     private Book book;
+    private int baseAmount;
     private int currentAmount;
 
 }

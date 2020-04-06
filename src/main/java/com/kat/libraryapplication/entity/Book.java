@@ -18,6 +18,7 @@ public class Book {
     private int pageNumber;
     private String publisher;
 
+
     @ManyToMany(fetch = FetchType.EAGER)
     private List<Author> authors;
 
