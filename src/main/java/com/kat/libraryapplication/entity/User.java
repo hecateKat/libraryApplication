@@ -27,4 +27,6 @@ public class User {
     private boolean isEnabled;
     private boolean isBanned;
 
+    private float debt;
+
 }
