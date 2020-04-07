@@ -1,5 +1,6 @@
 package com.kat.libraryapplication.entity;
 
+import com.kat.libraryapplication.validator.PasswordValidator;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -22,7 +23,7 @@ public class User {
     @Email
     private String email;
 
-
+    @PasswordValidator
     private String password;
     private boolean isEnabled;
     private boolean isBanned;
